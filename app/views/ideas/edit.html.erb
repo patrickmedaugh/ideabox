@@ -1,0 +1,9 @@
+<%= form_for @idea do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, value: @idea.title %>
+  <%= f.label :body %>
+  <%= f.text_area :body, value: @idea.body %>
+  <%= f.label :quality %>
+  <%= f.text_field :quality, value: @idea.quality %>
+  <%= f.submit "Save" %>
+<% end %>
